@@ -14,7 +14,7 @@ tags = [
   "privacy",
 ]
 features = ["fast", "blog", "syntax highlighting", "dark mode"]
-min_version = "0.41_1"
+min_version = "0.41_2"
 
 [author]
 name = "Lukas Joswiak"

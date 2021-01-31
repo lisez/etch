@@ -28,4 +28,8 @@
     {{ printf `<link rel="stylesheet" href="%s">` $css.RelPermalink | safeHTML }}
 
     <title>{{ .Site.Title }}{{ if .Title }} | {{ .Title }}{{ end }}</title>
+
+    {{ if .Site.googleAnalytics -}}
+        {{ template "_internal/google_analytics_async.html" . }}
+    {{ end}}
 </head>
