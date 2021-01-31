@@ -29,7 +29,7 @@
 
     <title>{{ .Site.Title }}{{ if .Title }} | {{ .Title }}{{ end }}</title>
 
-    {{ if .Site.googleAnalytics -}}
+    {{ if .Site.GoogleAnalytics -}}
         {{ template "_internal/google_analytics_async.html" . }}
     {{ end}}
 </head>
