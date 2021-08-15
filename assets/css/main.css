@@ -114,12 +114,17 @@ main#content ul#posts {
 main#content ul#posts li {
     margin: 5px 0;
     padding: 0;
+    width: max-content;
 }
 
 main#content ul#posts small {
     font-size: 0.8em;
     color: #767676;
     margin-left: 10px;
+}
+
+main#content ul#posts time {
+  display: inline-block;
 }
 
 main#content ul#posts li a {
