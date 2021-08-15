@@ -114,12 +114,17 @@ main#content ul#posts {
 main#content ul#posts li {
     margin: 5px 0;
     padding: 0;
+    width: max-content;
 }
 
 main#content ul#posts small {
     font-size: 0.8em;
     color: #767676;
     margin-left: 10px;
+}
+
+main#content ul#posts time {
+  display: inline-block;
 }
 
 main#content ul#posts li a {
@@ -142,7 +147,7 @@ main#content header#post-header h1 {
     line-height: 1.15;
 }
 
-main#content header#post-header time {
+main#content header#post-header div {
     display: block;
     font-size: 0.85em;
     color: #767676;
@@ -227,6 +232,15 @@ main#content figure figcaption p {
     display: inline;
     margin: 0;
     padding-left: 8px;
+}
+
+main#content blockquote {
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    padding-left: 15px;
+    border-left: 3px solid #ccc;
 }
 
 main#content code,
