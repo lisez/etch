@@ -1,5 +1,9 @@
 <li>
     <a href="{{ .Permalink }}">
+        {{ if and (.Params.showSeries) (.Params.series) }}
+        {{ $name := index .Params.series 0 }}
+        【{{ $name }}】
+        {{ end }}
         {{ .Title }}
         <small><time>{{ .Date.Format "2006-01-02" }}</time></small>
     </a>
