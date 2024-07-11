@@ -30,17 +30,6 @@
     <title>{{ .Site.Title }}{{ if .Title }} | {{ .Title }}{{ end }}</title>
 
     {{ with .Site.GoogleAnalytics -}}
-        {{ template "_internal/google_analytics_async.html" . }}
+        {{ template "_internal/google_analytics.html" . }}
     {{ end}}
-
-    {{ if .Site.Params.googleGtag }}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XR2SZS9T6K"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', {{ .Site.Params.googleGtag }});
-    </script>
-    {{ end }}
 </head>
