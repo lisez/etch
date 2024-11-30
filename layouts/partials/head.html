@@ -30,7 +30,7 @@
     <title>{{ .Site.Title }}{{ if .Title }} | {{ .Title }}{{ end }}</title>
 
     {{ with .Site.GoogleAnalytics -}}
-        {{ template "_internal/google_analytics_async.html" . }}
+        {{ template "_internal/google_analytics.html" . }}
     {{ end}}
 
     {{ if .Site.Params.googleGtag }}
