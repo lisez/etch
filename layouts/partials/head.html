@@ -29,7 +29,5 @@
 
     <title>{{ .Site.Title }}{{ if .Title }} | {{ .Title }}{{ end }}</title>
 
-    {{ with .Site.GoogleAnalytics -}}
-        {{ template "_internal/google_analytics.html" . }}
-    {{ end}}
+    {{ template "_internal/google_analytics.html" . }}
 </head>
